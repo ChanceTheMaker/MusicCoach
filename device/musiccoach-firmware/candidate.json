@@ -1,0 +1,14 @@
+{
+  "board": "FM-1",
+  "version": "MusicCoach 0.2 test candidate",
+  "product": "FM-1_902",
+  "file": "musiccoach-fm1-0.2.fwsc",
+  "bytes": 610086,
+  "sha256": "7b24e82aacc80ce8dd9966262768547b136732df3072d2329c59b88efb724d81",
+  "hardwareValidated": false,
+  "usbRestartVerified": true,
+  "ownerConfirmedScreen": true,
+  "ownerConfirmedKeySound": true,
+  "ownerConfirmationDate": "2026-10-13",
+  "dualCore": false
+}

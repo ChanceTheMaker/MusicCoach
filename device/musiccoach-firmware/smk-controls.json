@@ -1,0 +1,11 @@
+{
+  "board": "SMK-37 Pro & Elite",
+  "version": "MusicCoach-0.5-Controls-Test",
+  "product": "SMK-37_945",
+  "file": "musiccoach-smk-0.5-controls-app.bin",
+  "bytes": 537908,
+  "sha256": "5c10801b989c447d9aa720a3e58944dd45ffa3355187dafae7662ff129ada30e",
+  "candidate": true,
+  "hardwareValidated": false,
+  "dualCore": true
+}

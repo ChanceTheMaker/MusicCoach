@@ -1,0 +1,48 @@
+services:
+  db:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: musiccoach
+      POSTGRES_USER: musiccoach
+      POSTGRES_PASSWORD: ${DB_PASSWORD:?Set DB_PASSWORD}
+    volumes:
+      - database:/var/lib/postgresql/data
+    healthcheck:
+      test: [CMD-SHELL, 'pg_isready -U musiccoach -d musiccoach']
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    logging: &logging
+      driver: json-file
+      options: {max-size: 10m, max-file: '3'}
+  app:
+    build: .
+    restart: unless-stopped
+    depends_on:
+      db: {condition: service_healthy}
+    environment:
+      DATABASE_URL: postgres://musiccoach:${DB_PASSWORD}@db:5432/musiccoach
+      PUBLIC_ORIGIN: https://${SITE_HOST:?Set SITE_HOST}
+      SETUP_TOKEN: ${SETUP_TOKEN:?Set owner SETUP_TOKEN}
+      TRUST_PROXY: 'true'
+    volumes:
+      - settings:/data
+    logging: *logging
+  web:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    depends_on: [app]
+    environment:
+      SITE_HOST: ${SITE_HOST}
+    ports: ['80:80', '443:443', '443:443/udp']
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - certificates:/data
+      - caddy_config:/config
+    logging: *logging
+volumes:
+  database:
+  settings:
+  certificates:
+  caddy_config:

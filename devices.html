@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Installer &amp; Simulator · MusicCoach</title>
+  <link rel="icon" href="assets/musiccoach-whistle.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="themes.css">
+  <link rel="stylesheet" href="account.css">
+  <link rel="stylesheet" href="devices.css">
+</head>
+<body class="devices-page">
+  <header>
+    <a class="brand" href="./"><img src="assets/musiccoach-whistle.svg" width="36" height="30" alt="">MusicCoach</a>
+    <a class="header-cta" href="teacher.html">Practice room</a>
+    <a class="account-nav" href="connections.html">Connections</a>
+    <a class="account-nav" href="recording.html">Recording Room</a>
+    <a class="account-nav" href="devices.html" aria-current="page">Installer / Simulator</a>
+  </header>
+  <main>
+    <p class="eyebrow">MUSICCOACH ON YOUR KEYS</p>
+    <h1>Try it. Then take it with you.</h1>
+    <p class="devices-intro">Explore MusicCoach for FM-1 and SMK keyboards, or open the firmware installation tools.</p>
+    <div class="device-options">
+      <section class="device-option simulator-option" aria-labelledby="simulatorTitle">
+        <img class="device-art" src="assets/instruments/piano.svg" width="160" height="124" alt="">
+        <span class="device-badge">READY TO PLAY</span>
+        <h2 id="simulatorTitle">MusicCoach simulator</h2>
+        <p>Play piano and drum pads in your browser. Explore Coach, Jam and Psychedelic modes, plus 87 practice studies.</p>
+        <p class="device-detail">Choose the FM-1 or SMK keyboard view. No hardware installation needed.</p>
+        <a class="device-action primary" href="/device/musiccoach.html">Open MusicCoach simulator <span aria-hidden="true">↗</span></a>
+      </section>
+      <section class="device-option" aria-labelledby="installerTitle">
+        <div class="device-install-art" aria-hidden="true"><svg viewBox="0 0 160 124" width="160" height="124"><rect x="20" y="67" width="120" height="38" rx="10" fill="none" stroke="currentColor" stroke-width="3"/><path d="M80 17v61m-18-18 18 18 18-18M36 89h41" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="122" cy="87" r="4" fill="currentColor"/></svg></div>
+        <span class="device-badge">FIRMWARE TOOLS</span>
+        <h2 id="installerTitle">MusicCoach USB installer</h2>
+        <p>Install MusicCoach on your keyboard, resume a USB update, or restore the original firmware.</p>
+        <p class="device-detail">FM-1 and SMK test builds, optional dual-core audio, USB handoff from updater-enabled Doom, and original-firmware restoration.</p>
+        <a class="device-action" href="/device/musiccoach-install.html">Open MusicCoach installer <span aria-hidden="true">↗</span></a>
+      </section>
+    </div>
+    <p class="devices-note">Use Chrome or Edge for USB MIDI installation. Connect your keyboard directly to this computer.</p>
+    <a class="back-link" href="./">← Back to MusicCoach</a>
+  </main>
+  <script src="landing.js"></script>
+  <script type="module" src="account.js"></script>
+  <script type="module" src="rooms.js"></script>
+</body>
+</html>

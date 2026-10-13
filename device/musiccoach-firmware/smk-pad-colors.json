@@ -1,0 +1,11 @@
+{
+  "board": "SMK-37 Pro & Elite",
+  "version": "MusicCoach-0.6-Pad-Colors",
+  "product": "SMK-37_946",
+  "file": "musiccoach-smk-0.6-pad-colors-app.bin",
+  "bytes": 538036,
+  "sha256": "a9bd803c7379a519a6b5a0305258415a2d6426f260876c3544d32990950b640f",
+  "candidate": true,
+  "hardwareValidated": false,
+  "dualCore": true
+}

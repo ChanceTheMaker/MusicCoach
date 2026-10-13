@@ -1,0 +1,11 @@
+{
+  "board": "SMK-37 Pro & Elite",
+  "version": "MusicCoach 0.3 dc1 Candidate",
+  "product": "SMK-37_943",
+  "file": "musiccoach-smk-0.3-dc1-app.bin",
+  "bytes": 535728,
+  "sha256": "4c43f6902ba322307a7798a306c50819d7f75ceadb65a128d1419feb6df7cbe7",
+  "candidate": true,
+  "hardwareValidated": false,
+  "dualCore": true
+}

@@ -1,0 +1,11 @@
+{
+  "board": "FM-1",
+  "version": "MusicCoach 0.3 dc1 Candidate",
+  "product": "FM-1_903",
+  "file": "musiccoach-fm1-0.3-dc1.fwsc",
+  "bytes": 610113,
+  "sha256": "4b30d50ea70a225edd5c6c44f710c75ac7f9f861e5c0989f98e40cdad009d6f8",
+  "candidate": true,
+  "hardwareValidated": false,
+  "dualCore": true
+}

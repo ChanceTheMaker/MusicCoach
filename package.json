@@ -1,0 +1,23 @@
+{
+  "name": "musicteacher-fm1-smk",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node start.mjs",
+    "test": "node --test engine.test.mjs instrument-views.test.mjs fingerings.test.mjs guitar-chords.test.mjs theory.test.mjs harmony-lessons.test.mjs sample-player.test.mjs library.test.mjs sheet-model.test.mjs notation-source.test.mjs count-in.test.mjs tablature.test.mjs video-player.test.mjs playhead-drag.test.mjs track-mixer.test.mjs accounts.test.mjs recording-model.test.mjs",
+    "db:seed": "node --env-file=.env db/seed.mjs",
+    "db:up": "docker compose up -d db",
+    "db:backup": "node scripts/backup.mjs",
+    "test:accounts": "node --env-file=.env --test accounts.integration.test.mjs"
+  },
+  "dependencies": {
+    "@coderline/alphatab": "1.8.4",
+    "@tonejs/midi": "^2.0.28",
+    "fast-xml-parser": "^5.11.2",
+    "fflate": "^0.8.3",
+    "opensheetmusicdisplay": "2.2.1",
+    "pg": "^8.23.1",
+    "vexflow": "5.0.0"
+  }
+}

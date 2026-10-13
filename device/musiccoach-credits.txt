@@ -1,0 +1,33 @@
+MusicCoach Pocket Piano - native candidate 0.2 / 2026-10-12
+
+Original MusicCoach lessons, scoring, interface and preview: Chance Roth / MusicCoach.
+Hardware, synthesis, piano samples, graphics primitives, fonts, boot and update
+foundation: Felucca by Leo Kuroshita and Hugelton Instruments, with Chance Roth's
+SMK adaptation. Existing copyright, asset-license and GPL notices are retained.
+License: GPL-3.0-only; see LICENSE and the source asset notices.
+
+Felucca upstream: https://github.com/hugelton/Felucca
+Upstream 1.5.1 revision: a4d7ca2e5d52a4c35e2468401f00d883cadbda03
+SMK foundation: https://github.com/ChanceTheMaker/felucca-smk
+Local branch base: cc13e146f11d93328b4fc13ec92c4d69f6bc6e76
+
+Sloop was studied for visual direction. Later dual-core candidates adapt the
+GPL audio worker from Melodee dc7 via Sloop SMK; see firmware LICENSING.md.
+This version uses Felucca source and is not a clean-room implementation.
+
+Build status: FM-1 0.2 USB install/restart was verified; the owner confirmed
+screen and key sound. Other controls need hardware testing. Dual-core and
+SMK builds remain test candidates. Website publication does not promote them.
+Matching GPL source archives and build-specific licensing are linked by the installer.
+
+Candidate 0.2: 87 studies (47 piano, 36 drums, four sequencer workshops),
+searchable browser compendium, two generated 16-sample drum banks, optional
+animated kit, Coach/Jam/Psychedelic modes, startup mascot/jingle/light show,
+12 themes and three appearance modes. Full 27/37-key views with finger colors.
+K1 volume, K2 sound, K3 lesson, K4 shuttle; four performance controls over seven
+pages. Preferences and stars last for this native session only.
+
+Drum samples are rendered from Felucca's GPL synthesis generator, with original
+MusicCoach bank orchestration. Song excerpts identify their public-domain
+melodies; other study patterns are MusicCoach originals. The browser app, simulator and installer now share one HTTPS server.
+Native hardware does not yet synchronize browser accounts/imports. See docs/MUSICCOACH.md in source.
