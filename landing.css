@@ -40,3 +40,12 @@
 .instrument-card[aria-disabled=true] .instrument-art{opacity:.45;filter:saturate(.35);transform:none!important}
 .instrument-card[aria-disabled=true] h3,.instrument-card[aria-disabled=true] p{color:var(--muted)}
 .coming-soon{display:inline-block;margin-top:12px;padding:5px 8px;border:1px solid var(--line);border-radius:20px;font-size:10px;font-weight:700;color:var(--text);background:var(--panel)}
+.landing-page .site-footer{display:flex;flex-direction:column;gap:20px;color:var(--muted)}
+.smk-family{display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px;padding:22px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:visible}
+.smk-family>span{font-size:10px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;margin-right:auto}
+.smk-family a{font-size:12px;font-weight:600;text-decoration:none;color:var(--text);padding:5px 0}
+.smk-family a span{color:var(--muted);margin-left:3px}
+.smk-family a:hover,.smk-family a:hover span{color:var(--mint)}
+.smk-family a:focus-visible{outline:2px solid var(--mint);outline-offset:5px;border-radius:2px}
+.footer-meta{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+@media(max-width:650px){.smk-family{gap:12px 20px}.smk-family>span{width:100%;margin:0}.footer-meta{flex-direction:column}}
