@@ -35,3 +35,8 @@
 .instrument-card.tooltip-dismissed .instrument-tooltip{opacity:0;visibility:hidden;pointer-events:none}
 .instrument-card:first-child .instrument-tooltip{left:0;transform:none}.instrument-card:last-child .instrument-tooltip{left:auto;right:0;transform:none}
 @media(prefers-reduced-motion:reduce){.instrument-tooltip{transition:none}}
+/* Coming-soon cards retain their instrument flavor without navigation. */
+.instrument-links .instrument-card[aria-disabled=true]{cursor:not-allowed;transform:none;box-shadow:none;border-color:var(--line);border-top-color:var(--flavor)}
+.instrument-card[aria-disabled=true] .instrument-art{opacity:.45;filter:saturate(.35);transform:none!important}
+.instrument-card[aria-disabled=true] h3,.instrument-card[aria-disabled=true] p{color:var(--muted)}
+.coming-soon{display:inline-block;margin-top:12px;padding:5px 8px;border:1px solid var(--line);border-radius:20px;font-size:10px;font-weight:700;color:var(--text);background:var(--panel)}
